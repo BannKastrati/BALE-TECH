@@ -1,1 +1,1 @@
-"# BALE-TECH" 
+# BALE-TECH
