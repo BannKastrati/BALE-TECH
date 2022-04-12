@@ -35,7 +35,6 @@ body{
     font-size: 1.6rem;
     margin: 5rem auto 0;
     padding: 1rem; 
-    
 }
 .banner-btn a{
     width: 150px;
@@ -45,10 +44,12 @@ body{
     color: black;
     background-color: #fff;
     border: 0.5px solid  #fff;
+    border-radius: 0.5rem;
     font-weight: 500;
 }
 .banner-btn a:hover{
     border: 0.5px solid  #ca4273;
+    border-radius: 0.5rem;
     background-color: #ca4273;
     color:  rgb(255, 255, 255);
 }
@@ -106,7 +107,8 @@ button{
     padding: 1rem 1rem;
     color: #fff;
     background-color: #ca4273;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
     text-transform: uppercase;
     font-weight: 600;
     width: 15rem;
@@ -118,6 +120,38 @@ button{
 }
 .list-details{
     font-size: 1.2rem;
+}
+.cta{
+  display: flex;
+  justify-content: center;  
+}
+.cta-content{
+ display:flex;
+ flex-direction: column;
+ justify-content:center;
+ gap: 3.2rem;
+ padding: 2.4rem;
+ font-size: 1.4rem;
+}
+.cta-image img{
+  width: 45rem;
+  height: 45rem;
+}
+.cta-btn{
+  font-size: 1.8rem;
+  width: 15%;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #ca4273 ;
+  color: #fff;
+  text-decoration: none;
+}
+.cta-btn:hover{
+  background-color: #fff;
+  border: 3px solid #ca4273;
+  color: #ca4273;
+  font-weight: 500;
 }
 .site-footer{
   background-color:#0E0210;
