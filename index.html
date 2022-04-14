@@ -1,187 +1,208 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>BALE-TECH</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <section id="banner">
-        <nav class="sidenav">
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="#">Add to Cart</a></li>
-            </ul>
-        </nav>
-        <div class="banner-text">
-            <h1>BALE-TECH</h1>
-            <p>Where buying is easier and safer</p>
-            <div class="banner-btn">
-                <a href="#">Shop Now</a>
-            </div>
-        </div>
-   </section>
-   <div class="section-container">
-    <section id="products">
-        <div class="product">
-            <img class="photo-product" src="./img/acer.jpg" alt="acer">
-           <h3>Acer</h3>
-           <ul class="list-details">
-              <li>Display Size 15.60-inch</li>
-              <li>Processor Intel Core i3 7100U</li>
-              <li>Memory RAM 12GB</li>
-              <li>Graphics Processor Intel HD Graphics 620</li>
-              
-           </ul>
-           <button class="btn-product">Add to Cart</button>
-          </div>
-        <div class="product">
-            <img class="photo-product" src="./img/hp.jpg" alt="hp">
-           <h3>HP</h3> 
-           <ul class="list-details">
-               <li>Display Size 15.60-inch</li>
-               <li> Processor Intel Core i5 8250U</li>
-               <li>Memory RAM 8GB</li>
-               <li>Graphics Processor Intel HD Graphics 620</li>
-               
-           </ul>
-           <button class="btn-product">Add to Cart</button>
-         </div>
-        <div class="product">
-            <img class="photo-product" src="./img/lenovo.jpg" alt="lenovo">
-               <h3>Lenovo</h3> 
-           <ul class="list-details">
-               <li>Display Size 14.00-inch</li>
-               <li>Processor Intel Core i7 6600U</li>
-               <li>Memory RAM 12GB</li>
-               <li>Graphics Processor Intel HD Graphics 520</li>
-               
-           </ul>
-           <button class="btn-product">Add to Cart</button>  
-         </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="product">
-         <img class="photo-product" src="./img/mac2.jpg" alt="macbook">
-           <h3>MacBook</h3>
-           <ul class="list-details">
-               <li>Display Size 13.03-inch</li>
-               <li>Chip. 8-core CPU with 4 performance cores and 4 efficiency cores</li>
-               <li>Memory RAM 8GB</li>
-               <li>Graphics Processor Intel HD Graphics 520</li>
-               
-           </ul>
-           <button class="btn-product">Add to Cart</button>
-          </div>
-        <div class="product">
-         <img class="photo-product" src="./img/dell.jpg" alt="dell">
-            <h3>Dell</h3>
-            <ul class="list-details">
-                <li>Display Size 15.60-inch</li>
-                <li>Processor Processor Intel Core i3 6th Gen 6006U</li>
-                <li>Memory RAM 8GB</li>
-                <li>Graphics Processor Intel Integrated HD Graphics 520</li>
-                
-            </ul>
-            <button class="btn-product">Add to Cart</button>
-            </div>
-        <div class="product">
-         <img class="photo-product" src="./img/asus.jpg" alt="asus">
-           <h3>Asus</h3>
-           <ul class="list-details">
-               <li>LED-backlit Full HD 15.6-inch</li>
-               <li>Processor AMD Ryzen™ 7 4700U Mobile Processor</li>
-               <li>Memory RAM 8GB</li>
-               <li>Graphics Integrated AMD Radeon ™ Graphics</li>
-               
-           </ul>
-           <button class="btn-product">Add to Cart</button>
-         </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>BALE-TECH</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <section id="banner">
+    <header>
+      <nav class="sidenav">
+        <ion-icon class="close nav-icon" name="close"></ion-icon>
+        <ion-icon class="menu nav-icon" name="menu"></ion-icon>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner-text">
+      <h1>BALE-TECH</h1>
+      <p>Where buying is easier and safer</p>
+      <div class="banner-btn">
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  <div class="section-container">
+    <section id="products">
+      <div class="product">
+        <img class="photo-product" src="./img/acer.jpg" alt="acer">
+        <h3>Acer</h3>
+        <ul class="list-details">
+          <li>Display Size 15.60-inch</li>
+          <li>Processor Intel Core i3 7100U</li>
+          <li>Memory RAM 12GB</li>
+          <li>Graphics Processor Intel HD Graphics 620</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img class="photo-product" src="./img/hp.jpg" alt="hp">
+        <h3>HP</h3>
+        <ul class="list-details">
+          <li>Display Size 15.60-inch</li>
+          <li> Processor Intel Core i5 8250U</li>
+          <li>Memory RAM 8GB</li>
+          <li>Graphics Processor Intel HD Graphics 620</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img class="photo-product" src="./img/lenovo.jpg" alt="lenovo">
+        <h3>Lenovo</h3>
+        <ul class="list-details">
+          <li>Display Size 14.00-inch</li>
+          <li>Processor Intel Core i7 6600U</li>
+          <li>Memory RAM 12GB</li>
+          <li>Graphics Processor Intel HD Graphics 520</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img class="photo-product" src="./img/mac2.jpg" alt="macbook">
+        <h3>MacBook</h3>
+        <ul class="list-details">
+          <li>Display Size 13.03-inch</li>
+          <li>Chip. 8-core CPU with 4 performance cores and 4 efficiency cores</li>
+          <li>Memory RAM 8GB</li>
+          <li>Graphics Processor Intel HD Graphics 520</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img class="photo-product" src="./img/dell.jpg" alt="dell">
+        <h3>Dell</h3>
+        <ul class="list-details">
+          <li>Display Size 15.60-inch</li>
+          <li>Processor Processor Intel Core i3 6th Gen 6006U</li>
+          <li>Memory RAM 8GB</li>
+          <li>Graphics Processor Intel Integrated HD Graphics 520</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img class="photo-product" src="./img/asus.jpg" alt="asus">
+        <h3>Asus</h3>
+        <ul class="list-details">
+          <li>LED-backlit Full HD 15.6-inch</li>
+          <li>Processor AMD Ryzen™ 7 4700U Mobile Processor</li>
+          <li>Memory RAM 8GB</li>
+          <li>Graphics Integrated AMD Radeon ™ Graphics</li>
+
+        </ul>
+        <button class="btn-product">Add to Cart</button>
+      </div>
     </section>
-   </div>  
-   </section>
-    <section>
-      <div class="cta">
+  </div>
+  </section>
+  <section>
+    <div class="cta">
       <div class="cta-content">
         <h3 class="cta-header">Need a high level laptop</h3>
         <p>The Apple M1 chip gives the 13-inch MacBook Pro speed and power beyond belief.
           With up to 2.8x CPU performance. Up to 5x the graphics speed.
-           An advanced Neural Engine for up to 11x faster machine learning. 
-           And up to 20 hours of battery life so you can go all day. 
+          An advanced Neural Engine for up to 11x faster machine learning.
+          And up to 20 hours of battery life so you can go all day.
           It's our most popular pro notebook, taken to a whole new level.</p>
-          <a href="#" class="cta-btn">Buy now</a>
+        <a href="#" class="cta-btn">Buy now</a>
       </div>
       <div class="cta-image">
         <img src="img/mac2.jpg" alt="macbook">
       </div>
-      </div>
-    </section>
-   <section>
-   <footer class="site-footer">
-    <div class="container">
-      <div class="first-footer">
-       
-        <div class="item-footer">
-          <h6>Brands</h6>
-          <ul class="footer-links">
-            <li><a href="#">Acer</a></li>
-            <li><a href="#">HP</a></li>
-            <li><a href="#">Lenovo</a></li>
-            <li><a href="#">MacBook</a></li>
-            <li><a href="#">Dell</a></li>
-          </ul>
-        </div>
+    </div>
+  </section>
+  <section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="first-footer">
+          <div class="item-footer">
+            <h6>Brands</h6>
+            <ul class="footer-links">
+              <li><a href="#">Acer</a></li>
+              <li><a href="#">HP</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">MacBook</a></li>
+              <li><a href="#">Dell</a></li>
+            </ul>
+          </div>
 
-        <div class="item-footer">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="#">Add to Cart</a></li>
-          </ul>
+          <div class="item-footer">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li><a href="#">Add to Cart</a></li>
+            </ul>
+          </div>
+          <div class="item-footer">
+            <h6>Locations</h6>
+            <ul class="footer-links">
+              <li><a href="#">Pristina</a></li>
+              <li><a href="#">Tirana</a></li>
+              <li><a href="#">Skopje</a></li>
+              <li><a href="#">Ulcinj</a></li>
+              <li><a href="#">Sarajevo</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="item-footer">
-          <h6>Locations</h6>
-          <ul class="footer-links">
-          <li><a href="#">Pristina</a></li>
-          <li><a href="#">Tirana</a></li>
-          <li><a href="#">Skopje</a></li>
-          <li><a href="#">Ulcinj</a></li>
-          <li><a href="#">Sarajevo</a></li>
-          </ul>
-        </div>
+        
       </div>
       <hr>
-    </div>
-    <div class="container">
-      <div class="second-footer">
-        <div>
-          <p class="copyright-text">Copyright &copy; 2022 BALE-TECH</p>
-        </div>
+      <div class="container">
+        <div class="second-footer">
+          <div>
+            <p class="copyright-text">Copyright &copy; 2022 BALE-TECH</p>
+          </div>
 
-        <div>
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
+          <div>
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-</footer>
-</section>
+    </footer>
+  </section>
+  <script>
+    const sideNav = document.querySelector('.sidenav');
+    document.querySelector('.close').onclick=()=>{
+        sideNav.classList.remove('open-nav');
+    }
+    document.querySelector('.menu').onclick=()=>{
+        sideNav.classList.add('open-nav');
+    }
+  </script>
 </body>
+
 </html>
